@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: BloodPleasure
+  datasource:
+    url: jdbc:mysql://localhost:3306/bloodpleasure
+    username: root
+    password: whateverPassword
+server:
+  http2:
+    enabled: true
+  port: 9002
+  address: 0.0.0.0
+logging:
+  level:
+    io.netty: debug
+    ng: debug
+debug: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
